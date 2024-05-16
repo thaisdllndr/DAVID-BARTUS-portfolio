@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #000911, #015186, #000911);
+}
+.container {
+    width: 1920px;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#Paisagempraia {
+    background-image: url(https://images.pexels.com/photos/2825237/pexels-photo-2825237.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-position-x: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.texto {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    transform: translate(-50%, -50%);
+    font-size: 82px;
+    color: #B7CAD0;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.textosubtitulo {
+    position: absolute;
+    top: 350px;
+    left: 200px;
+    transform: translate(-10%, -30%);
+    font-size: 30px;
+    color: #B7CAD0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.container:nth-child(2) {
+    display: flex;
+}
+
+.container:nth-child(2) img {
+    width: 50%;
+
+}
+
+.container:nth-child(2) .texto-lado {
+    width: 50%;
+    margin-right: 5%;
+    padding: 50px;
+    font-size: 16px;
+    text-align: justify;
+    color: #46707a;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+}
+
+.feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 3px;
+}
+
+.feed .container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.feed .container img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
